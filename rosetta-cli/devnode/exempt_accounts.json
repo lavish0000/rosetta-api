@@ -5,7 +5,7 @@
     },
     "currency": {
       "symbol": "DCK",
-      "decimals": 6
+      "decimals": 18
     }
   }
 ]
