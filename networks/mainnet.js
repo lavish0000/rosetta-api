@@ -3,22 +3,22 @@ const metadata = require('./metadata/mainnet-metadata.json');
 
 module.exports = {
   blockchain: 'Substrate',
-  network: 'Dock Mainnet',
-  nodeAddress: 'ws://localhost:9944', // This expects you have a synced local node running!
-  ss58Format: 22,
+  network: 'peaq-network',
+  nodeAddress: 'wss://peaq.api.onfinality.io/public-ws', // This expects you have a synced local node running!
+  ss58Format: 42,
   properties: {
-    ss58Format: 22,
-    tokenDecimals: 6,
-    tokenSymbol: 'DCK',
+    ss58Format: 42,
+    tokenDecimals: 18,
+    tokenSymbol: 'PEAQ',
     poaModule: {
-      treasury: '3EnzzoFZSBeDcQ36xu8GpfMw4MU5uDmUatskoAaSg1JBxQPb',
+      treasury: '5EYCAe5ijiYfyeZ2JJCGq56LmPyNRAKzpG4QkoQkkQNB5e6Z',
     },
   },
-  genesis: '0xf73467c6544aa68df2ee546b135f955c46b90fa627e9b5d7935f41061bb8a5a9',
-  name: 'Dock Mainnet',
-  specName: 'dock-main-runtime',
+  genesis: '0xd2a5d385932d1f650dae03ef8e2748983779ee342c614f80854d32b8cd8fa48c',
+  name: 'peaq-network',
+  specName: 'peaq-node',
   // Next 2 fields need to change whenever they change on the chain.
-  specVersion: 19,
+  specVersion: 101,
   transactionVersion: 1,
   types,
   metadataRpc: metadata.metadataRpc,

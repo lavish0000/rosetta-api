@@ -26,7 +26,7 @@ request_funds(1){
 
 create_account(1){
   create{
-    network = {"network":"Dock Mainnet", "blockchain":"Substrate"};
+    network = {"network":"peaq-network", "blockchain":"Substrate"};
     key = generate_key({"curve_type": "edwards25519"});
     account = derive({
       "network_identifier": {{network}},
@@ -43,7 +43,7 @@ create_account(1){
 
 transfer(1){
   transfer{
-    transfer.network = {"network":"Dock Mainnet", "blockchain":"Substrate"};
+    transfer.network = {"network":"peaq-network", "blockchain":"Substrate"};
     currency = {"symbol":"DCK", "decimals":6};
     sender = find_balance({
       "minimum_balance":{
